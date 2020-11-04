@@ -1,0 +1,38 @@
+*-- Estilos básicos--*/
+
+ul.menu,
+ul.sub-menu{
+    padding-left: 0
+ }
+ ul.menu li{
+    list-style: none;   
+	padding:5px 10px;
+    width:150px;
+    height:30px;
+    border:1px solid #000;
+    color:#fff;
+    background-color:#000;
+	text-align="center";
+ }
+ ul.menu > li:hover ul.sub-menu{
+    display: block;
+    min-width: 200px;
+ }
+ ul.sub-menu{
+    display: none;
+ }
+ 
+ /*-- Estilos para pantallas de mas de 600 pixeles --*/
+
+ @media (min-width: 600px) {
+ ul.menu > li {
+       display: inline-block;
+       position: relative;
+	   
+    }
+ ul.sub-menu{
+       left: 0;
+       position: absolute;
+	   
+    }
+ }

@@ -1,0 +1,27 @@
+.pagination {
+display: inline-block;
+}
+.pagination a {
+border-radius: 2px;
+color: white;
+float: center;
+padding: 4px 6px;
+background-color: #5ab7de;
+transition: background-color .3s;
+font-size: 16px;
+font-family:Arial;
+margin: 0 2px; /* 0 is for top and bottom. Feel free to change it */
+}
+
+.center {
+text-align: center;
+}
+
+.pactive {
+border-radius: 2px;
+background-color: #fff;
+font-size: 16px;
+color: black;
+margin: 0 2px;
+}
+.pagination a:hover:not(.pactive) {background-color: #888; font-family:Arial Black;}

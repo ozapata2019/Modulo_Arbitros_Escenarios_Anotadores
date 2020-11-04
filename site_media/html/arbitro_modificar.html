@@ -1,0 +1,62 @@
+	   
+  
+	  <form method="POST" action="{EDIT}" >         
+
+		
+		<label>
+        <input type="text" id="identificacion" name="identificacion" required  readonly="yes" placeholder="Identificacion:" value="{identificacion}" readonly title="Identificaci&oacute;n del arbitro"> 
+		</label>		
+        
+		<label>
+        <input type="text" id="nombre" name="nombre" required  autofocus  maxlength= "12" pattern="[a-zA-Z]{1,20}{""}"  placeholder="Nombre:"  value="{nombre}" title="Digite Nombre de arbitro" autofocus> 
+        </label>         
+        
+		<label>
+        <input type="text" id="apellido" name="apellido" required placeholder="Apellido:" pattern="[a-zA-Z]{1,20}{""}"  value="{apellido}" title="Digite Apellido de arbitro">
+        </label>  
+       
+        <label>
+		<input type="Email" id="email" name="email" required maxlength= "50" placeholder="Email:" pattern="[a-zA-Z]{1,20}{""}" value="{email}" title="Digite Email del arbitro">		
+        </label>		
+		
+        <label>
+		<input type="text" id="direccion" name="direccion" required  maxlength= "100" placeholder="Dirección:" title="Digite dirección de arbitro" pattern="[a-zA-Z]{1,20}{""}" value="{direccion}"   >		
+    	</label>
+		
+		<label>
+		<input type="text" id="telefono" name="telefono" required  maxlength= "15" placeholder="Teléfono:" title="Digite teléfono de arbitro" pattern="[a-zA-Z]{1,20}{""}" value="{telefono}">		
+    	</label>
+		
+		<label>
+		<input type="text" id="tipo" name="tipo" required  maxlength= "30" placeholder="tipo de arbitro:" title="Digite Tipo de arbitro" pattern="[a-zA-Z]{1,20}{""}" value="{tipo}">		
+    	</label>		
+		
+		
+		<label>
+		
+				<input type="text" id="disponible" name="disponible" required  maxlength= "2" placeholder="disponibilidad de arbitro:" title="Digite disponibilidad del arbitro" pattern="[a-zA-Z]{1,20}{""}" value="{disponible}">
+				
+		</label>
+		
+		
+          <button id="submit" type="submit"  name = "guardar" class="btn">Actualizar</button> 
+		  <input id="submit" type='submit'  value='Eliminar' form ="ForEliminar" class="btn">	
+		
+		
+			
+        
+      </form>  	   
+	  
+	   <form name='ForEliminar' id='ForEliminar'  method='POST' action="{DELETE}"  ONSUBMIT='return pregunta()'>  				
+		  <input type = "hidden" name= "identificacion" id= "identificacion" value= "{identificacion}">			
+			<div align = "right">
+		  	 
+		    </div>
+		</form>	
+    		
+ 
+
+			
+	
+
+	

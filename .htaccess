@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteRule ^arbitros/ arbitros/controller.php
+RewriteRule ^escenarios/ escenarios/controller.php
+RewriteRule ^agenda/ agenda/controller.php
+RewriteRule ^reportes/ reportes/controller.php
+
+
+
